@@ -185,7 +185,7 @@ export default function InvitationSection() {
             fontWeight: 300,
           }}
         >
-          Together with their families, request the honour of your gracious presence at the celebration of the marriage of
+          Together with our families, request the honour of your gracious presence at the celebration of the marriage of
         </motion.p>
 
         {/* Couple names */}
@@ -220,63 +220,62 @@ export default function InvitationSection() {
           </h2>
         </motion.div>
 
-        {/* Date and venue */}
+        {/* Events Schedule */}
         <motion.div
           variants={itemVariants}
-          style={{ marginTop: "2rem" }}
+          style={{
+            marginTop: "2.5rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.5rem",
+            textAlign: "left",
+            maxWidth: "400px",
+            margin: "2.5rem auto 0",
+          }}
         >
-          <p
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontSize: "0.8rem",
-              letterSpacing: "4px",
-              textTransform: "uppercase",
-              color: "var(--text-secondary)",
-              marginBottom: "0.5rem",
-            }}
-          >
-            On
-          </p>
-          <p
-            style={{
-              fontFamily: "var(--font-heading)",
-              fontSize: "1.4rem",
-              color: "var(--text-primary)",
-              fontWeight: 600,
-              letterSpacing: "2px",
-            }}
-          >
-            Wednesday, 28 May 2026
-          </p>
-          <p
-            style={{
-              fontFamily: "var(--font-body)",
-              fontSize: "0.85rem",
-              color: "var(--text-secondary)",
-              marginTop: "0.5rem",
-              fontWeight: 300,
-            }}
-          >
-            at 09:00 AM onwards
-          </p>
+          {/* Reception */}
+          <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+            <span style={{ fontSize: "1.2rem" }}>✨</span>
+            <div>
+              <p style={{ fontFamily: "var(--font-heading)", fontSize: "1.1rem", color: "var(--text-primary)", fontWeight: 600, letterSpacing: "1px" }}>
+                Reception
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+                Wednesday, 27th May 2026 | 6:30 – 8:00 PM
+              </p>
+            </div>
+          </div>
+
+          {/* Marriage Ceremony */}
+          <div style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
+            <span style={{ fontSize: "1.2rem" }}>✨</span>
+            <div>
+              <p style={{ fontFamily: "var(--font-heading)", fontSize: "1.1rem", color: "var(--text-primary)", fontWeight: 600, letterSpacing: "1px" }}>
+                Marriage Ceremony (Muhurtham)
+              </p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+                Thursday, 28th May 2026 | 7:45 - 9:00 AM
+              </p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Venue */}
         <motion.div
           variants={itemVariants}
-          style={{ marginTop: "1.5rem" }}
+          style={{ marginTop: "2.5rem" }}
         >
           <p
             style={{
               fontFamily: "var(--font-heading)",
-              fontSize: "0.8rem",
+              fontSize: "0.75rem",
               letterSpacing: "4px",
               textTransform: "uppercase",
               color: "var(--text-secondary)",
               marginBottom: "0.5rem",
             }}
           >
-            At
+            📍 Venue
           </p>
           <p
             style={{
@@ -287,23 +286,19 @@ export default function InvitationSection() {
               letterSpacing: "1px",
             }}
           >
-            VELU MAHAL
+            Vellu Mahal A/C
           </p>
           <p
             style={{
               fontFamily: "var(--font-body)",
-              fontSize: "0.8rem",
+              fontSize: "0.85rem",
               color: "var(--text-secondary)",
               marginTop: "0.3rem",
-              lineHeight: 1.7,
+              lineHeight: 1.6,
               fontWeight: 300,
             }}
           >
-            Ramalakshmi Nagar, Thadikombu Road,
-            <br />
-            Trichy Bypass, Dindigul,
-            <br />
-            Tamil Nadu – 624004
+            Trichy bypass, Dindigul
           </p>
         </motion.div>
 

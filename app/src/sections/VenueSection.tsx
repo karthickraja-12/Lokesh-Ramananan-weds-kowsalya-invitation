@@ -5,8 +5,8 @@ import { MapPin, Copy, ExternalLink, Check } from "lucide-react";
 import { useState } from "react";
 import FloralCorner from "@/components/FloralCorner";
 
-const ADDRESS = "VELU MAHAL, Ramalakshmi Nagar, Thadikompu Road, Trichy Bypass, Dindigul, Tamil Nadu – 624004";
-const MAPS_URL = "https://www.google.com/maps/search/Velu+Mahal+Ramalakshmi+Nagar+Thadikompu+Road+Dindigul";
+const ADDRESS = "Vellu Mahal A/C, Trichy Bypass, Dindigul, Tamil Nadu – 624004";
+const MAPS_URL = "https://www.google.com/maps/search/Vellu+Mahal+A%2FC+Trichy+Bypass+Dindigul";
 
 export default function VenueSection() {
   const [copied, setCopied] = useState(false);
@@ -63,13 +63,12 @@ export default function VenueSection() {
           <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "0.5rem", marginBottom: "1.5rem" }}>
             <MapPin size={18} color="#C58B5B" />
             <h3 style={{ fontFamily: "var(--font-heading)", fontSize: "1.6rem", color: "var(--text-primary)", fontWeight: 600, letterSpacing: "2px" }}>
-              VELU MAHAL
+              Vellu Mahal A/C
             </h3>
           </div>
 
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: 2, fontWeight: 300 }}>
-            Ramalakshmi Nagar,<br />
-            Thadikompu Road, Trichy Bypass,<br />
+            Trichy Bypass,<br />
             Dindigul, Tamil Nadu – 624004
           </p>
 
@@ -157,13 +156,13 @@ export default function VenueSection() {
           style={{ display: "flex", gap: "1rem", flexWrap: "wrap", justifyContent: "center" }}
         >
           {[
-            { icon: "🗓️", label: "Date", value: "Wednesday, 28 May 2026" },
-            { icon: "⏰", label: "Time", value: "09:00 AM onwards" },
+            { label: "Reception", date: "Wed, 27th May", time: "6:30 – 8:00 PM" },
+            { label: "Muhurtham", date: "Thu, 28th May", time: "7:45 - 9:00 AM" },
           ].map((item) => (
             <div key={item.label} className="glass-card" style={{ flex: 1, minWidth: "180px", padding: "1.2rem 1.5rem", borderRadius: "16px", textAlign: "center" }}>
-              <span style={{ fontSize: "1.5rem" }}>{item.icon}</span>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "3px", textTransform: "uppercase", color: "var(--text-secondary)", margin: "0.4rem 0 0.2rem", fontWeight: 300 }}>{item.label}</p>
-              <p style={{ fontFamily: "var(--font-heading)", fontSize: "0.95rem", color: "var(--text-primary)", fontWeight: 500 }}>{item.value}</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", letterSpacing: "3px", textTransform: "uppercase", color: "var(--accent-gold)", marginBottom: "0.4rem", fontWeight: 600 }}>{item.label}</p>
+              <p style={{ fontFamily: "var(--font-heading)", fontSize: "1.1rem", color: "var(--text-primary)", fontWeight: 500 }}>{item.date}</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.8rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>{item.time}</p>
             </div>
           ))}
         </motion.div>

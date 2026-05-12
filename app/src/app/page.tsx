@@ -8,7 +8,6 @@ import FloatingElements from "@/components/FloatingElements";
 import MusicToggle from "@/components/MusicToggle";
 import HeroSection from "@/sections/HeroSection";
 import InvitationSection from "@/sections/InvitationSection";
-import QuoteSection from "@/sections/QuoteSection";
 import CountdownSection from "@/sections/CountdownSection";
 import VenueSection from "@/sections/VenueSection";
 import GreetingSection from "@/sections/GreetingSection";
@@ -27,7 +26,6 @@ export default function Home() {
             <MusicToggle />
             <HeroSection />
             <InvitationSection />
-            <QuoteSection />
             <CountdownSection />
             <VenueSection />
             <GreetingSection />
