@@ -114,52 +114,59 @@ export default function InvitationSection() {
             margin: "2.5rem 0",
             display: "flex",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <div
             style={{
               position: "relative",
-              width: "120px",
-              height: "60px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              gap: "1.5rem",
             }}
           >
-            {/* Animated soft glow */}
-            <motion.div
-              animate={{ opacity: [0.1, 0.3, 0.1] }}
-              transition={{ duration: 4, repeat: Infinity }}
+            {/* Left Line */}
+            <div style={{ width: "60px", height: "1px", background: "linear-gradient(90deg, transparent, rgba(197,139,91,0.6))" }} />
+            
+            {/* Heart Container */}
+            <div
               style={{
-                position: "absolute",
-                width: "80px",
-                height: "80px",
-                background: "radial-gradient(circle, #C58B5B 0%, transparent 70%)",
-                borderRadius: "50%",
-                filter: "blur(15px)",
+                position: "relative",
+                width: "44px",
+                height: "40px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
-            />
-            
-            {/* Elegant SVG Hearts */}
-            <svg viewBox="0 0 100 50" style={{ width: "100px", zIndex: 1 }}>
-              <path
-                d="M30 40 C 10 30, 10 10, 30 10 C 40 10, 50 20, 50 20 C 50 20, 60 10, 70 10 C 90 10, 90 30, 70 40 L 50 55 L 30 40"
-                fill="none"
-                stroke="#C58B5B"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                opacity="0.6"
+            >
+              {/* Animated soft glow */}
+              <motion.div
+                animate={{ opacity: [0.1, 0.25, 0.1], scale: [1, 1.1, 1] }}
+                transition={{ duration: 4, repeat: Infinity }}
+                style={{
+                  position: "absolute",
+                  width: "50px",
+                  height: "50px",
+                  background: "radial-gradient(circle, #C58B5B 0%, transparent 70%)",
+                  borderRadius: "50%",
+                  filter: "blur(10px)",
+                }}
               />
-              <path
-                d="M40 35 C 25 28, 25 15, 40 15 C 45 15, 50 22, 50 22 C 50 22, 55 15, 60 15 C 75 15, 75 28, 60 35 L 50 45 L 40 35"
-                fill="#C58B5B"
-                opacity="0.3"
-              />
-            </svg>
-            
-            {/* Side Flourishes */}
-            <div style={{ position: "absolute", left: "-40px", top: "50%", width: "40px", height: "1px", background: "linear-gradient(90deg, transparent, #C58B5B)" }} />
-            <div style={{ position: "absolute", right: "-40px", top: "50%", width: "40px", height: "1px", background: "linear-gradient(270deg, transparent, #C58B5B)" }} />
+              
+              {/* Elegant SVG Heart */}
+              <svg viewBox="0 0 24 24" style={{ width: "28px", height: "28px", zIndex: 1 }}>
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  fill="rgba(197, 139, 91, 0.15)"
+                  stroke="#C58B5B"
+                  strokeWidth="1"
+                />
+              </svg>
+            </div>
+
+            {/* Right Line */}
+            <div style={{ width: "60px", height: "1px", background: "linear-gradient(270deg, transparent, rgba(197,139,91,0.6))" }} />
           </div>
         </motion.div>
 
