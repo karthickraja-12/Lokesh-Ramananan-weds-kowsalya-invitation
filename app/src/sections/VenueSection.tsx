@@ -56,7 +56,7 @@ export default function VenueSection() {
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] as any }}
           className="glass-card-strong"
           style={{ borderRadius: "20px", padding: "2.5rem", textAlign: "center" }}
         >
