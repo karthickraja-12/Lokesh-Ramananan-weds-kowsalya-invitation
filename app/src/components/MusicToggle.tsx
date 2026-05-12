@@ -11,9 +11,10 @@ export default function MusicToggle() {
 
   useEffect(() => {
     setMounted(true);
-    audioRef.current = new Audio("/music.mp3");
+    // Using a royalty-free 'lite' acoustic track
+    audioRef.current = new Audio("https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3");
     audioRef.current.loop = true;
-    audioRef.current.volume = 0.25;
+    audioRef.current.volume = 0.2;
     return () => {
       audioRef.current?.pause();
     };
