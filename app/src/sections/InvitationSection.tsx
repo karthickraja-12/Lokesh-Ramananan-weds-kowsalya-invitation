@@ -197,7 +197,7 @@ export default function InvitationSection() {
               lineHeight: 1.4,
             }}
           >
-            <span className="gold-gradient-text">Lokesh Ramanan K</span>
+            <span className="gold-gradient-text">Lokesh Ramanan</span>
           </h2>
           <p
             style={{

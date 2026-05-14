@@ -17,12 +17,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Lokesh Ramanan K & Kowsalya J — Wedding Invitation",
+  title: "Lokesh Ramanan & Kowsalya J — Wedding Invitation",
   description:
-    "You are cordially invited to celebrate the wedding of Lokesh Ramanan K and Kowsalya J on 28 May 2026 at Velu Mahal, Dindigul.",
-  keywords: ["wedding", "invitation", "Lokesh", "Kowsalya", "save the date"],
+    "You are cordially invited to celebrate the wedding of Lokesh Ramanan and Kowsalya J on 28 May 2026 at Velu Mahal, Dindigul.",
+  keywords: ["wedding", "invitation", "Lokesh Ramanan", "Kowsalya", "save the date"],
   openGraph: {
-    title: "Lokesh Ramanan K & Kowsalya J — Wedding Invitation",
+    title: "Lokesh Ramanan & Kowsalya J — Wedding Invitation",
     description:
       "Join us to celebrate our special day — 28 May 2026, Velu Mahal, Dindigul.",
     type: "website",

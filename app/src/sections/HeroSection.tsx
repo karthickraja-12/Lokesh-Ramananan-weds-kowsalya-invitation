@@ -246,7 +246,7 @@ export default function HeroSection() {
                 marginBottom: "0.5rem",
               }}
             >
-              <span className="gold-gradient-text">Lokesh Ramanan K</span>
+              <span className="gold-gradient-text">Lokesh Ramanan</span>
             </h1>
             <div
               style={{

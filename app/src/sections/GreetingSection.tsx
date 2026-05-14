@@ -81,7 +81,7 @@ export default function GreetingSection() {
         </p>
 
         <h3 style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2rem, 5vw, 3rem)", lineHeight: 1.4 }}>
-          <span className="gold-gradient-text">Lokesh & Kowsalya</span>
+          <span className="gold-gradient-text">Lokesh Ramanan & Kowsalya</span>
         </h3>
 
         {/* Ring icon */}
